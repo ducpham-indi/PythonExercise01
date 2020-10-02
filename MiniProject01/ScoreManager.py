@@ -11,7 +11,7 @@ def LoadScoresFromFiles():
     f = open(__file_path)
     for line in f.readlines():
         items = line.split(',')
-        if len(items) < 2: contiue
+        if len(items) < 2: continue
 
         name = items[0].strip()
         score = items[1].strip()
